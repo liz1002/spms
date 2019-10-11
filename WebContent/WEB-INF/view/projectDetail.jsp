@@ -6,6 +6,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$(function() {
+		$("#delete").click(function() {
+			if (confirm("삭제하시겠습니까?") != true){
+			    return false;
+			}
+		})
+	})
+</script>
 <style>
 	table, th, td{
 		border: 1px solid black;
@@ -53,7 +63,7 @@
 	</table>
 	<p>
 		<a href="update.do?no=${spms.no}">수정</a>
-		<a href="#">삭제</a>
+		<a href="delete.do?no=${spms.no}" id="delete">삭제</a>
 		<a href="list.do">돌아가기</a>
 	</p>
 </body>

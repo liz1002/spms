@@ -112,6 +112,18 @@ public class SPMSDAO {
 		return -1;
 	}//updateProject
 	
-	
-	
+	public int deleteProject(Connection conn, int no) { 
+		PreparedStatement pstmt = null;
+		try {
+			String sql = "delete from spms where no=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, no);
+			return pstmt.executeUpdate();	
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			JDBCUtil.close(pstmt);
+		}
+		return -1;
+	}//deleteProject	
 }

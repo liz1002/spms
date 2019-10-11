@@ -6,6 +6,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+	input.btn{
+		font-size: 17px;
+		background: #ccc;
+		color: #fff;
+		border: 1px solid #ccc;
+		padding: 5px;
+	}
+	input.btn:hover {
+		text-shadow: 1px 1px 1px #ccc;
+	}
+</style>
 <link href="${pageContext.request.contextPath}/css/common.css" type="text/css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/js/common.js"></script>
@@ -57,8 +69,8 @@
 			</select>
 		</p>
 		<p>
-			<input type="submit" value="수정">
-			<input type="reset" value="취소">
+			<input type="submit" value="수정" class="btn">
+			<input type="reset" value="취소" class="btn">
 		</p>
 	</form>
 </body>
