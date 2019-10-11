@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+
+label{
+	width: 150px;
+	float: left;
+}
+fieldset p:last-child input{
+ 	margin-left: 120px; 
+}
+span.error{
+	color: red;
+	font-size: 10px;
+	display: none;
+}
+ span.notMatch{
+ 	color: red;
+	font-size: 10px;
+}
