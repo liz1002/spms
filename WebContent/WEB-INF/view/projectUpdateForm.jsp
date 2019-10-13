@@ -32,6 +32,10 @@
 			}
 		})
 		
+		$("#reset").click(function() {
+			location.href="detail.do?no=${spms.no}"; 
+		})
+		
 		$("select").val(progress).attr("selected", "selected");
 	})
 </script>
@@ -70,7 +74,7 @@
 		</p>
 		<p>
 			<input type="submit" value="수정" class="btn">
-			<input type="reset" value="취소" class="btn">
+			<input type="button" value="취소" class="btn" id="reset">
 		</p>
 	</form>
 </body>

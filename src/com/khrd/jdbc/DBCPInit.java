@@ -32,7 +32,7 @@ public class DBCPInit extends HttpServlet{
 		try {
 			String url = "jdbc:mysql://localhost:3306/project";
 			String userid = "root";
-			String userpwd = "rootroot";
+			String userpwd = "1002";
 			
 			ConnectionFactory connFactory = new DriverManagerConnectionFactory(url, userid, userpwd);
 			PoolableConnectionFactory poolableConnFactory = new PoolableConnectionFactory(connFactory, null);

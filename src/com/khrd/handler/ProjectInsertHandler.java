@@ -12,13 +12,12 @@ import com.khrd.jdbc.ConnectionProvider;
 import com.khrd.jdbc.JDBCUtil;
 
 public class ProjectInsertHandler implements CommandHandler {
-
 	@Override
 	public String process(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+		req.setCharacterEncoding("utf-8");
 		if(req.getMethod().equalsIgnoreCase("get")) {
 			return "/WEB-INF/view/projectInsertForm.jsp";
 		} else if(req.getMethod().equalsIgnoreCase("post")) {
-			req.setCharacterEncoding("utf-8");
 			String name = req.getParameter("name");
 			String content = req.getParameter("content");
 			String progress = req.getParameter("progress");

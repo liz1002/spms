@@ -40,7 +40,7 @@
 			<label>종료 날짜</label>
 			<input type="date" name="enddate">
 			<span class="error">종료 날짜를 선택하세요.</span>
-		</p>
+		</p> 
 		<p>
 			<label>상태</label>
 			<select name="progress">

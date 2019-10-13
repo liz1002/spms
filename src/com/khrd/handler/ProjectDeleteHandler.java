@@ -21,9 +21,8 @@ public class ProjectDeleteHandler implements CommandHandler {
 			conn = ConnectionProvider.getConnection();
 			SPMSDAO dao = SPMSDAO.getInstance();
 			dao.deleteProject(conn, no);
-			return "/WEB-INF/view/projectList.jsp";
-//			resp.sendRedirect(req.getContextPath() + "/list.do");
-//			return null;
+			resp.sendRedirect(req.getContextPath() + "/list.do");
+			return null;
 		}catch (Exception e) {
 			e.printStackTrace();
 		}finally {
